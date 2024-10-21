@@ -1,0 +1,179 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.4;
+  font-size: 1.8rem;
+  font-family: "Outfit", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(228, 78%, 60%);
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: hsl(217, 54%, 11%);
+  padding: 10px;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 340px;
+  cursor: pointer;
+  transition: all 500ms;
+  box-shadow: #0a1629 0px 5px 30px;
+}
+.card__img {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.card__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.card__img-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 255, 247, 0);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  transition: all 500ms;
+}
+.card__img-overlay:hover {
+  background-color: rgba(0, 255, 247, 0.3);
+}
+.card__img-overlay:hover img {
+  opacity: 1;
+}
+.card__img-overlay img {
+  width: 4rem;
+  height: auto;
+  opacity: 0;
+  transition: all 500ms;
+}
+.card__title {
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+  transition: all 500ms;
+}
+.card__title:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card__para {
+  color: hsl(215, 51%, 70%);
+}
+.card__hr {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.card__info {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.9rem 0;
+}
+.card__info-token {
+  color: hsl(178, 100%, 50%);
+}
+.card__info-day {
+  color: hsl(215, 51%, 70%);
+}
+.card__info-token, .card__info-day {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card__user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1.4rem 0 0.5rem 0;
+}
+.card__user-info-img {
+  width: 3.5rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+.card__user-info-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.card__user-info-name {
+  font-size: 1.5rem;
+  color: hsl(215, 51%, 70%);
+}
+.card__user-info-name a {
+  color: hsl(0, 0%, 100%);
+  transition: all 300ms;
+}
+.card__user-info-name a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+  .card {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

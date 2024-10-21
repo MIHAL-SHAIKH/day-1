@@ -17,5 +17,4 @@
 .prettierignore
 
 /design
-/css/
 node_modules/
