@@ -1,0 +1,22 @@
+$blue-soft : hsl(215, 51%, 70%);
+$blue-dark: hsl(216, 50%, 16%);
+$blue-darkest : hsl(217, 54%, 11%);
+$cyan:hsl(178, 100%, 50%);
+$white: hsl(0, 0%, 100%);
+
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 600;
+
+
+$body-bg:$blue-darkest;
+$card-bg:$blue-dark;
+$text-primary:$white;
+$text-secondary:$blue-soft;
+$active-text:$cyan;
+
+@mixin align-items($vertical-align,$gap:0) {
+    display: flex;
+    align-items: $vertical-align;
+    gap: $gap;
+}
