@@ -48,13 +48,16 @@ h2 {
   font-size: 2.2rem;
 }
 
+body {
+  background-color: hsl(217, 54%, 11%);
+  padding: 1rem;
+}
+
 .wrapper {
   display: grid;
   place-items: center;
   min-height: 100vh;
   width: 100%;
-  background-color: hsl(217, 54%, 11%);
-  padding: 1rem;
 }
 
 .card {
