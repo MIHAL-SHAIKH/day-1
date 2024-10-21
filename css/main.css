@@ -107,7 +107,7 @@ body {
 .card__title {
   font-weight: 600;
   color: hsl(0, 0%, 100%);
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   transition: all 500ms;
 }
 .card__title:hover {
@@ -125,7 +125,7 @@ body {
   font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
-  margin: 1.9rem 0;
+  margin: 2.1rem 0;
 }
 .card__info-token {
   color: hsl(178, 100%, 50%);
@@ -141,8 +141,8 @@ body {
 .card__user-info {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 1.4rem 0 0.5rem 0;
+  gap: 12px;
+  padding: 1.4rem 0 0.7rem 0;
 }
 .card__user-info-img {
   width: 3.5rem;
